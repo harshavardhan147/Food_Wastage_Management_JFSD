@@ -1,0 +1,48 @@
+/* General Styles for the Header */
+header {
+  display: flex;
+  justify-content: space-between; /* Distribute space between title and links */
+  align-items: center; /* Vertically center content */
+  padding: 10px 20px; /* Add padding around header */
+  background-color: #8b0000; /* Dark red background color */
+  color: white; /* White text color */
+}
+
+.left {
+  flex: 1; /* Allow title to take up available space */
+}
+
+.left h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 1.8rem; /* Adjust the font size for title */
+}
+
+.right {
+  display: flex; /* Make the right section a flex container */
+  justify-content: flex-end; /* Align the items to the right */
+  gap: 20px; /* Space between the links */
+}
+
+.nav-link,
+.logout-btn {
+  color: white; /* White text for links and button */
+  text-decoration: none; /* Remove underline by default */
+  font-size: 1.1rem; /* Adjust font size */
+  padding: 8px 16px; /* Add some padding for clickable area */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Underline effect and color change on hover for links and logout button */
+.nav-link:hover,
+.logout-btn:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: olive; /* Change text color to olive on hover */
+}
+
+/* Remove border or outline when focused */
+.nav-link:focus,
+.logout-btn:focus {
+  outline: none; /* Remove default focus outline */
+}
